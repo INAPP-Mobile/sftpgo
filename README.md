@@ -35,7 +35,7 @@ The deploy form pre-fills all required variables. No additional services needed 
 
 **After the first successful deploy:**
 
-1. Open `https://<your-domain>/web/admin/setup` to create your admin account
+1. Open `https://{your-domain}/web/admin/setup` to create your admin account
 2. The setup page only appears once on first run
 3. Create users and start transferring files
 
@@ -57,7 +57,7 @@ Behind Railway's reverse proxy the client IP changes between requests, so this t
 This template pre-wires a Railway TCP proxy on port `2022`, so the SFTP service is reachable out of the box. After deploying, Railway assigns the proxy host and port — find them under the `sftpgo` service → **Settings** → **Networking** → **TCP Proxy**, then connect:
 
 ```
-sftp -P <proxy-port> youruser@<proxy-host>.proxy.rlwy.net
+sftp -P {proxy-port} youruser@{proxy-host}.proxy.rlwy.net
 ```
 
 ## Dependencies for
