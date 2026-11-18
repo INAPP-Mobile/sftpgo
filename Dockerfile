@@ -1,4 +1,4 @@
-FROM drakkan/sftpgo:latest
+FROM drakkan/sftpgo:v2.7.6
 
 LABEL org.opencontainers.image.source="https://github.com/mc9max/sftpgo"
 
